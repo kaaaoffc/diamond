@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilih Diamond</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+
+body{
+  background:url("https://files.catbox.moe/jh1sff.jpg") no-repeat center;
+  background-size:cover;
+}
+
+.overlay{
+  background:rgba(15,23,42,0.9);
+  min-height:100vh;
+  padding:15px;
+}
+
+/* HEADER */
+.header{
+  color:white;
+  margin-bottom:15px;
+  font-weight:bold;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+
+.card{
+  background:#ffffff;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.selected{
+  background:#22c55e;
+  color:white;
+}
+
+button{
+  width:100%;
+  margin-top:15px;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:#22c55e;
+  color:white;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<div class="header">💎 Pilih Diamond Gratis</div>
+
+<div class="grid" id="list"></div>
+
+<button onclick="kirimDiamond()">KONFIRMASI</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
